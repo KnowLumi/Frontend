@@ -1,0 +1,33 @@
+.rect1 {
+    background-image: url('./Included_images/rect1.png');
+}
+
+.rect2 {
+    background-image: url('./Included_images/rect2.png');
+}
+
+.rect1_a{
+    background-image: url();
+}
+
+.rect {
+    background-image: url('./Included_images/rect.png');
+}
+
+@media (max-width: 640px) {
+    .rect {
+        background-image: url('./Included_images/rect_mobile.png');
+    }
+
+    .rect1 {
+        background-image: url('');
+    }
+
+    .rect1_a {
+        background-image: url('./Included_images/rect1_mobile.png');
+    }
+
+    .rect2 {
+        background-image: url('./Included_images/rect2_mobile.png');
+    }
+}

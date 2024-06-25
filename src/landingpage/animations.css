@@ -1,0 +1,80 @@
+.about-tilt {
+    animation: tilting 3s forwards infinite;
+}
+
+.about-tilt-rev {
+    animation: tilting-rev 3s forwards infinite;
+}
+
+.cash{
+    animation: cash-tilt 1s forwards ease-in infinite;
+}
+
+@keyframes cash-tilt {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-8deg);
+    }
+}
+
+@keyframes tilting {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+}
+
+@keyframes tilting-rev {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+}
+
+.process-line path {
+    animation: change_color 0.6s ease-out 0.1s forwards infinite;
+}
+
+@keyframes change_color {
+    0% {
+        fill: #4258BE;
+    }
+
+    50% {
+        fill: #88DB1B;
+    }
+
+    100% {
+        fill: #4258BE;
+    }
+}
+
+.program-anime {
+    width: 0rem;
+    animation: slide 1s linear both infinite;
+    animation-delay: 1ms;
+}
+
+@keyframes slide {
+    0% {
+        width: 0rem;
+    }
+
+    100% {
+        width: 27.25rem;
+    }
+}

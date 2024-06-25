@@ -1,0 +1,268 @@
+.aboutbar {
+    background-size: 100% 100%;
+}
+
+.hero-border {
+    border: 1px solid;
+    border-image-source: linear-gradient(91.19deg, rgba(0, 0, 0, 0.24) 0.75%, rgba(0, 0, 0, 0.17) 0.76%, rgba(102, 102, 102, 0.43) 99%);
+}
+
+.lineanime {
+    height: 0.25rem;
+    animation: linextend 2s forwards;
+}
+
+.herogradient {
+    animation: gradientanime 2s ease-in forwards;
+
+}
+
+.enroll-anime {
+    animation: ballmove 8s linear 1ms forwards infinite;
+}
+
+.slider-anime {
+    animation: slidermove 2s linear 1ms forwards;
+}
+
+.review-bg {
+    background: linear-gradient(270deg, #010101 4.14%, rgba(1, 1, 1, 0) 22%, rgba(1, 1, 1, 0) 76.14%, #010101 94.62%);
+}
+
+.arrow-anime {
+    animation: arrowanime 500ms linear forwards infinite;
+}
+
+.our-courses {
+    background-image: url('../assets/our_courses.png');
+}
+
+.my-button {
+    transition: background-color 0.1s ease;
+}
+
+.my-button:hover {
+    background-color: transparent;
+}
+
+.icon {
+    transform: rotate(-45deg);
+    transition: transform 0.1s ease;
+}
+
+.my-button:hover .icon {
+    transform: rotate(0deg);
+    /* Rotate by 45 degrees on hover */
+}
+
+.course1 {
+    background-image: url('../pages/ProgressImages/course1.png');
+}
+
+.people {
+    background-image: url('../assets/people.png');
+}
+
+@keyframes arrowanime {
+    0% {
+        background: linear-gradient(90deg, #FFFFFF 109.5%, rgba(115, 115, 115, 0) 116.54%);
+    }
+
+    50% {
+        background: linear-gradient(90deg, #FFFFFF 23.9%, rgba(115, 115, 115, 0) 116.54%);
+
+    }
+
+    100% {
+        background: linear-gradient(90deg, rgba(115, 115, 115, 0) 77.08%, #FFFFFF 116.54%);
+
+    }
+}
+
+@keyframes slidermove {
+    0% {
+        transform: translateX(88px);
+    }
+
+    100% {
+        transform: translateX(271px);
+    }
+}
+
+
+@keyframes ballmove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    45% {
+        transform: translate(33.5rem, 0);
+    }
+
+    55% {
+        transform: translate(36.5rem, -4rem);
+    }
+
+    100% {
+        transform: translate(70.3rem, -4.2rem);
+    }
+}
+
+@keyframes linextend {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 11rem;
+    }
+}
+
+@keyframes gradientanime {
+    0% {
+        background: linear-gradient(81.06deg, rgba(254, 254, 254, 0.3) 6.83%, rgba(115, 115, 115, 0.084) 29.65%, rgba(247, 247, 247, 0.3) 56.91%);
+    }
+
+    50% {
+        background: linear-gradient(81.06deg, rgba(254, 254, 254, 0.3) 6.83%, rgba(115, 115, 115, 0.084) 60.95%, rgba(115, 115, 115, 0) 89.26%);
+    }
+
+    100% {
+        background: linear-gradient(81.06deg, rgba(254, 254, 254, 0.3) 6.83%, rgba(115, 115, 115, 0.084) 93.24%);
+    }
+}
+
+.enroll-banner {
+    background-image: url('../assets/enroll.png');
+}
+
+.rectangle {
+    background-image: url('../assets/rect1.png');
+}
+
+.enroll1 {
+    background-image: url('../assets/enroll1.png');
+}
+
+.enroll2 {
+    background-image: url('../assets/enroll2.png');
+}
+
+.action-banner {
+    background-image: url('../assets/action.png');
+}
+
+.action-line {
+    background-image: url('../assets/enroll_line.png');
+}
+
+.action-line-2 {
+    background-image: url('../assets/enroll_line.png');
+}
+
+.process::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .enroll-banner {
+        background-image: url('../assets/enroll_mobile.png');
+    }
+
+    .rectangle {
+        background-image: url('../assets/rect1_mobile.png');
+    }
+
+    .enroll1 {
+        background-image: url('../assets/enroll1_mobile.png');
+    }
+
+    .enroll2 {
+        background-image: url('../assets/enroll2_mobile.png');
+    }
+
+    .action-line {
+        background-image: url('../assets/enroll_line_mobile.png');
+    }
+
+    .our-courses {
+        background-image: url('../assets/our_courses_mobile.png');
+    }
+
+    .action-line-2 {
+        background-image: url('');
+    }
+
+
+    .lineanime {
+        height: 0.18rem;
+        animation: linextend-mobile 2s forwards;
+    }
+
+    .enroll-anime {
+        animation: ballmove_mobile 8s linear 1ms forwards infinite;
+    }
+
+    .course1 {
+        background-image: url('../pages/ProgressImages/course1.png');
+    }
+
+    .people {
+        background-image: url('../assets/people_mobile.png');
+    }
+
+    .action-banner {
+        background-image: url('');
+    }
+}
+
+.textanime {
+    animation: textcolorchange linear 2s forwards infinite;
+}
+
+@keyframes linextend-mobile {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 4rem;
+    }
+}
+
+@keyframes ballmove_mobile {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    45% {
+        transform: translate(9.2rem, 0);
+    }
+
+    55% {
+        transform: translate(9.8rem, -1rem);
+    }
+
+    100% {
+        transform: translate(19.2rem, -1rem);
+    }
+}
+
+@keyframes textcolorchange {
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: #88DB1B;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.footer-link {
+    font-size: 12px;
+    line-height: 24px;
+}
