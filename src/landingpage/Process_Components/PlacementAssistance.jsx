@@ -42,14 +42,14 @@ const PlacementAssistance = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:w-[534px] relative items-center mt-9 gap-4 rounded-2xl bg-[#88DB1B0D] md:p-6">
+      <div className="flex flex-col md:w-[534px] relative items-center mt-8 gap-4 rounded-2xl bg-[#88DB1B0D] md:px-6 md:py-4">
         <h3 className="text-[#4258BE] font-semibold text-xl tracking-wider">
           Our Exceptional Mentors
         </h3>
         <Carousel
           autoplay
           loop
-          className="rounded-xl pb-7 md:w-[522px]"
+          className="rounded-xl pb-4 md:w-[522px]"
           prevArrow={""}
           nextArrow={""}
           navigation={({ setActiveIndex, activeIndex, length }) => (
@@ -138,11 +138,11 @@ const PlacementAssistance = () => {
 
         </Carousel>
       </div>
-      <div className="flex flex-col mt-9 gap-7">
+      <div className="flex flex-col mt-8 gap-6">
         <h3 className="text-[#4258BE] font-semibold text-xl tracking-wider">
           Free Add-ons:
         </h3>
-        <ul className="md:w-[33.5rem] flex flex-wrap gap-7">
+        <ul className="md:w-[33.5rem] flex flex-wrap gap-6">
           {freeAddons.map((item, i) => (
             <li key={`freeAddon_${i}`} className="flex gap-3.5 w-60">
               {item.icon}
@@ -153,8 +153,8 @@ const PlacementAssistance = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-col md:flex-row w-fit gap-8 items-center mt-9">
-        <Button className="rounded-full flex items-center gap-3 capitalize font-archivo font-medium text-[16px] bg-black text-white py-1 pr-1 pl-6">
+      <div className="flex flex-col md:flex-row w-fit gap-8 items-center mt-7">
+        <Button className="rounded-full flex items-center gap-3 capitalize font-archivo font-medium text-sm bg-black text-white py-1 pr-1 pl-6">
           Join Our Program
           <i className="flex w-8 h-8 text-white -rotate-45 border border-[#0101010D] bg-[#FFFFFF4D] justify-center items-center rounded-full">
             <MdArrowForward />

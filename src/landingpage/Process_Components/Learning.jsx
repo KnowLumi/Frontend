@@ -18,7 +18,7 @@ const Learning = () => {
   return (
     <div className="flex flex-col w-full ">
       <h1 className="font-normal text-4xl md:text-[42px]">Learning</h1>
-      <p className="w-[13.25rem] md:w-[27.5rem] text-xs font-light tracking-wider mt-8">
+      <p className="w-[13.25rem] md:w-[28rem] text-xs font-light tracking-wider mt-8">
         At KnowLumi, students engage in personalized learning, foster community
         connections, and leverage their skills to secure internships, jobs, or
         start-ups.

@@ -1,3 +1,4 @@
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@material-tailwind/react";
 import {
   MdHdrStrong,
@@ -14,6 +15,18 @@ import "./Process_Components/process.css"
 import cash from "./Process_svg/cash.png";
 
 const Process = ({ scrollToIncluded }) => {
+
+  const [isScrolledToBottom, setIsScrolledToBottom] = useState(false);
+  const processRef = useRef(null);
+
+  const handleScroll = () => {
+    const { scrollTop, scrollHeight, clientHeight } = processRef.current;
+    if (scrollTop + clientHeight >= scrollHeight) {
+      setIsScrolledToBottom(true);
+    } else {
+      setIsScrolledToBottom(false);
+    }
+  };
   const Processes = [
     <Learning key={"process-1"} />,
     <CommunityEngagement key={"process-2"} />,
@@ -56,18 +69,19 @@ const Process = ({ scrollToIncluded }) => {
           </Button>
         </div>
       </div>
-      <div className="w-full py-2 flex proces flex-col items-end h-full md:h-[36rem] md:overflow-y-scroll">
+      <div ref={processRef}
+        onScroll={handleScroll} className="w-full z-20 py-2 flex process flex-col items-end h-full md:h-[36rem] md:overflow-y-scroll">
         <div className="w-full md:w-[623px] md:h-[3595px] flex flex-col">
           <div className="flex flex-col w-full process-comp bg-contain bg-no-repeat md:h-full md:w-[32.125rem] h-full gap-6 py-12">
             <div className="flex w-full">
-              <div className="flex flex-col gap-[88px] w-full mt-[72px] ">
+              <div className="flex flex-col gap-[88px] w-full mt-[92px]">
                 {Processes.map((process, i) => (
                   <div
                     key={`p_no_${i}`}
-                    className="flex"
+                    className="flex -mt-5"
                   >
                     <div className="flex flex-col h-fit">
-                      <div className="rounded-full -translate-x-3 md:-translate-x-4 h-10 w-10 md:w-[52px] md:h-[52px] bg-[#4258BE] flex justify-center items-center text-white font-extrabold">
+                      <div className="rounded-full -translate-x-3 md:-translate-x-[18px] md:-translate-y-2 h-10 w-10 md:w-[52px] md:h-[52px] bg-[#4258BE] flex justify-center items-center text-white font-extrabold">
                         {i + 1}
                       </div>
                     </div>

@@ -30,11 +30,11 @@
         transform: translate(0px, 4px);
     }
 
-    33% {
+    25% {
         transform: translate(114px, 4px);
     }
 
-    66% {
+    50% {
         transform: translate(154px, -54px);
     }
 
